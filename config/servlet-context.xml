@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
         ">
 	<!-- 扫描com.mvc.controller包下所有的类，使spring注解生效 -->
-	<context:component-scan base-package="com.mvc.controller" />
+	<context:component-scan base-package="com" />
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"><!-- 根据确定出的不同MIME名，使用不同视图解析器解析视图 -->
 		<property name="order" value="1" /><!-- 设置优先级 -->
 		<property name="defaultContentType" value="text/html" /><!-- 设置默认的MIME类型，如果没有指定拓展名或请求参数，则使用此默认MIME类型解析视图 -->

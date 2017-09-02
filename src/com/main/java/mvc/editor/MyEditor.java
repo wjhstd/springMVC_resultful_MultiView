@@ -1,10 +1,11 @@
-package com.mvc.editor;
+package mvc.editor;
+
+import mvc.model.Person;
 
 import java.beans.PropertyEditorSupport;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import com.mvc.model.Person;
 
 public class MyEditor extends PropertyEditorSupport {
 	@Override
